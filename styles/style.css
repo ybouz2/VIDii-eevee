@@ -1,10 +1,13 @@
-/* CSS Document */
+/*************/
+/* CSS RESET */
+/*************/
+
+/* naar een idee van Jen Simmons */
 *, *::after, *::before {
   box-sizing:border-box;  
 }
 
-html, body {
-  height:100%;
+body {
   margin:0;
 }
 
@@ -12,8 +15,31 @@ button:not([disabled]) {
   cursor:pointer;
 }
 
-/* jouw CSS vanaf hier */
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+
+:root {
+  --color-headings:crimson
+}
+
+
+
+
+
+/********************/
+/* ALGEMENE STYLING */
+/********************/
 
 h1 {
-  color:crimson;
+  color:var(--color-headings);
 }
+
+
+/* ... */
+
+
