@@ -39,6 +39,89 @@ h1 {
   color:var(--color-headings);
 }
 
+.eevee {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5em;
+  background-color: #CFBB98;
+  border: solid 2px #CFBB98;
+  border-radius: 50%;
+}
+.eevee img {
+  width: 25em;
+  }
+
+.firestone img, .waterstone img, .thunderstone img, .icestone img, .leafstone img, .friendship img{
+    width: 4em;
+}
+
+.waterstone img{
+  margin-left: -15em;
+}
+
+.firestone {
+  background-color: orange;
+}
+
+.waterstone{
+  background-color: skyblue;
+}
+
+.thunderstone{
+  background-color: yellowgreen;
+}
+
+.firestone, .waterstone, .thunderstone{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 33.333333vh;
+}
+
+.stoneleft{
+  float: left;
+  width: 50%;
+  display: flex;
+  flex-direction:column;
+  justify-content:space-around;
+  
+}
+
+.leafstone, .icestone, .friendship{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 33.333333vh;
+}
+
+.icestone img{
+  margin-right: -15em;
+}
+
+.leafstone {
+  background-color: lightgreen;
+}
+
+.icestone {
+  background-color: lightblue;
+}
+
+.friendship {
+  background-color: hotpink;
+}
+
+.stoneright{
+  float: right;
+  width: 50%;
+  display: flex;
+  flex-direction:column;
+  justify-content:space-around;
+}
+
+
+
 
 /* ... */
 
