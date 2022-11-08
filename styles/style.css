@@ -1,125 +1,323 @@
+/* FONTS INLADEN */
+@font-face {
+  font-family: 'Flexo-Medium';
+  font-style: normal;
+  font-weight: 500;
+  
+  src: local('Flexo Medium'), local('Flexo-Medium'),
+      url('../fonts/flexo/Flexo-Medium.woff2') format('woff2'),
+      url('../fonts/flexo/Flexo-Medium.woff') format('woff'),
+      url('../fonts/flexo/Flexo-Medium.ttf') format('truetype');
+}
+
+/* CUSTOM PROPPERTIES */
+:root{
+  --color-eevee:   #CFBB98;
+  --color-espeon:  #87CEEB;
+  --color-flareon: #E98E33;
+  --color-glaceon: #DEF0F3;
+  --color-jolteon: #CDDF81;
+  --color-leafeon: #C0CF9C;
+  --color-moon:    #FEFCD7;
+  --color-sun:     #FCE570;
+  --color-sylveon: #FFCBF7;
+  --color-umbreon: #000;
+  --color-vaporeon:#A7C7EA;
+  --html-bg-image: url(../images/background.png);
+  --p--font-family: 'Roboto', Verdana, Arial, sans-serif;
+  --h2-font-family: 'Flexo-Medium', Helvetica, Arial, sans-serif;
+}
+
 html {
+  background-image: var(--html-bg-image);
+  background-size: cover;
+  display: flex;
+}
 
+body {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+}
+
+header{
+  display: flex;
+  justify-content: flex-end;
+}
+
+header section{
+  display: flex;
+  position: absolute;
+  right: 10vmin;
+  top: 4vmin;
+}
+
+header section button{
+  margin-left: 5vmin;
+}
+
+h1 {
+  left: 10vmin;
+  position: absolute;
+  top: 2vmin;
+  z-index: 1;
+}
+
+h1 img {
+  width: 25vmin;
+}
+
+h2{
+  color: #fff;
+  font-family: var(--h2-font-family);
+  font-size: 5vmin;
+}
+
+p{
+  color: #fff;
+  font-family: var(--p--font-family);
+  width: 50vw;
+}
+
+article{
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 5vmin;
+  transform: translateX(-20%);
+  transition: all 1s ease-in-out;
+  visibility: hidden;
+}
+
+main section section:nth-of-type(1) img:hover {
+  animation: bounce 2s ease infinite;
+  animation: bounce 2s ease infinite;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+main section section:nth-of-type(1) {
+  background: var(--color-eevee);
+  border-radius: 100%;
+  cursor: pointer;
+  left: 50%;
+  padding: 10vmin;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all ease-in-out 1s;
+  z-index: 2;
+}
+
+ main section section:nth-of-type(1) img {
+  animation: scale 2s timing-function delay iteration-count direction fill-mode;
+  transition: all ease-in-out 1s ;
+  width: 35vmin;
+}
+
+.eevee img {
+  width: 35vmin;
+}
+
+main section, main section section:nth-of-type(2) {
+  display: grid;
+  grid-template-areas: "layer";
+  left: 50%;
+  place-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header section button img, main section section:nth-of-type(2) button img, main section button img {
+  width: 5vmin;
+}
+
+header section button, main section section:nth-of-type(2) button, main section button {
+  background: none;
+  border-radius: 50%;
+  display: grid;
+  font-size: 3vmin;
+  font-weight: bold;
+  grid-area: layer;
+  height: 10vmin;
+  place-items: center;
+  width: 10vmin;
+}  
+
+main section section:nth-of-type(2) button:nth-of-type(1) {
+  background: var(--color-glaceon);
+  transform: translateX(40vmin);
+}
+
+main section section:nth-of-type(2) button:nth-of-type(2) {
+  background: var(--color-leafeon);
+  transform: translate(30vmin, 30vmin);
+}
+
+main section section:nth-of-type(2) button:nth-of-type(3) {
+  background: var(--color-flareon);
+  transform: translateY(40vmin);
+}
+
+main section section:nth-of-type(2) button:nth-of-type(4) {
+  background:var(--color-jolteon);
+  transform: translate(-30vmin, 30vmin);
+}
+
+main section section:nth-of-type(2) button:nth-of-type(5) {
+  background: var(--color-vaporeon);
+  transform: translateX(-40vmin);
+}
+
+main section button {
+  background: var(--color-eevee);
+  transform: translateY(-40vmin);
+}
+
+main section section:nth-of-type(2) button:nth-of-type(6){
+  background: var(--color-sylveon);
+  transform: translate(30vmin, -30vmin);
+}
+
+header section button:nth-of-type(1){
+  background: var(--color-espeon);
+}
+
+header section button:nth-of-type(2) {
+  background: var(--color-umbreon);
+}
+
+/* CLASSES DIE WORDEN TOEGEVOEGD/GESWITCHED MET JAVASCRIPT*/
+
+.visible{
+  opacity: 1;
+  top: 70vmin;
+  visibility: visible;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.eevee{
+  animation: flicker .2s ease-in-out;
+  animation-iteration-count: 10;
+}
+
+.eevee-clicked {
     display: flex;
-    background-image: url(../images/background.png);
-    background-size: cover;
-  }
-  body {
-    position: relative;
-    margin: auto;
-    width: 100%;
-    height: 100vh;
-  }
-h1{
-    position: absolute;
-    top: 2vmin;
-    left: 10vmin;
-    z-index: 1;
-}
-  h1 img{
-    
-    width: 25vmin;
+    justify-content: space-between;
+    padding: 100vmin !important;
   }
 
-.eevee img:hover{
-    cursor: pointer;
-    animation: bounce 2s ease infinite;
+ .eevee-clicked img{
+  left: 25vmin;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all ease-in-out 1s ;
+  width: 50vmin !important;
 }
 
+ .eevee-clicked img:hover{
+  animation: none !important;
+}
+
+ .stat-hidden{
+  visibility: hidden;
+}
+
+.background-glaceon{
+  background: var(--color-glaceon) !important;
+}
+
+.background-leafeon{
+  background: var(--color-leafeon) !important;
+}
+
+.background-flareon{
+  background: var(--color-flareon) !important;
+}
+  
+.background-jolteon{
+  background: var(--color-jolteon) !important;
+}  
+
+.background-vaporeon{
+  background: var(--color-vaporeon) !important;
+} 
+
+.background-sylveon{
+  background: var(--color-sylveon) !important;
+} 
+
+.background-espeon{
+  background: var(--color-sun) !important;
+} 
+
+.background-umbreon{
+  background: var(--color-moon) !important;
+} 
+
+.background-eevee{
+  background: var(--color-eevee)!important;
+} 
+
+.html-espeon{
+  background: var(--color-espeon);
+  transition: all ease-in-out 2s ;
+}
+
+.html-umbreon{
+  background: var(--color-umbreon);
+  transition: all ease-in-out 2s ;
+}
+
+.html-eevee{
+  background-size: cover;
+  background: url(../images/background.png);
+}
+
+  /* KEYFRAMES */
+
+  /* ANIMATIE VOOR OP EN NEER SPRINGEN MIDDELSTE POKEMON MET EEN HOVER */
 @keyframes bounce {
-	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-	40% {transform: translateY(-30px);}
-	60% {transform: translateY(-15px);}
+
+0%, 20%, 50%, 80%, 100% {
+  transform: translateY(0);
+}
+40% {
+  transform: translateY(-30px);
+}
+60% {
+  transform: translateY(-15px);
+}
 }
 
-
-
-  .eevee{
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10vmin;
-    border-radius: 100%;
-    background: #CFBB98; 
-    z-index: 2;
+/* ANIMATIE VOOR EVOLUTIE TIJDENS HOVER OVER DE STENEN. */
+@keyframes flicker {    
+from {
+  opacity: 0;
   }
-
-  /* .eevee-clicked{
-    
-    padding: 85vmin;
-    
-  } */
-
-  .eevee img{
-    width: 35vmin;
+to {
+  opacity: 1;
   }
-  
-  .circle {  
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: grid;
-    grid-template-areas: "layer";
-    place-items: center;
-    background: none;
-    border-radius: 50%;
-    width: calc(2 * 40vmin);
-    height: calc(2 * 40vmin);   
-  }
-
-  .stat img{
-        width: 5vmin;
-    }
-
-  .stat {
-    grid-area: layer;
-    width: 10vmin;
-    height: 10vmin;
-    border-radius: 50%;
-  
-    display: grid;
-    place-items: center;
-  
-    background: #ffc947;
-    color: #185adb;
-    font-weight: bold;
-    font-size: 3vmin;
-    
-  }  
-
-  .offset1{
-    transform: translateX(40vmin);
-    background: #DEF0F3;
-  }
-
-  .offset2{
-    transform: translate(30vmin, 30vmin);
-    background: #C0CF9C;
-  }
-
-  .offset3{
-    transform: translateY(40vmin);
-    background: #E98E33;
-  }
-
-  .offset4{
-    transform: translate(-30vmin, 30vmin);
-    background: #CDDF81;
-
-  }
-
-  .offset5{
-    transform: translateX(-40vmin);
-    background: #A7C7EA;
-  }
-
-  .offset6{
-    transform: translateY(-40vmin);
-    background: #FFCBF7;
-  }
-  
-  
+}  
   

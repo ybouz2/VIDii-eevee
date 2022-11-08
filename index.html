@@ -7,102 +7,82 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<title>VIDii 2022/23 - Eeveelution</title>
-	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
 	<header>
-		<h1><img src="images/eeveelution.png" alt="Eevelution"></h1>
+		<h1><a href="index.html"><img src="images/eeveelution.png" alt="Eevelution"></a></h1>
+
+		<section>
+		<button class="stones" id="sun">
+			<img src="images/sun.png" alt="sun">
+		</button>
+
+		<button class="stones" id="moon">
+			<img src="images/moon.png" alt="sun">
+		</button>
+		</section>
+		
 	</header>
 	
-
-	<section class="circle" >
-
+<main>
+	<section class="center-circle" >
 		
-		
-		<section class="eevee eevee-clicked">
-			<img src="images/eevee.png" alt="Eevee">
+		<section id="circle">
+			<img id="eevee" src="images/eevee.png" alt="Eevee" >
+
+			<article>
+			<h2 id="pokemon-name">#133 Eevee</h2>
+			<p>Eevee is een kleine, zoogdierachtige viervoetige Pokémon met voornamelijk bruine vacht. De punt van zijn pluimstaart en zijn grote harige kraag zijn crèmekleurig. Het heeft korte, slanke poten met drie kleine tenen en een roze voetzooltje aan elke voet. Eevee heeft bruine ogen, lange puntige oren met donkerbruine binnenkant en een kleine zwarte neus. 
+				Eevee evolueert op verschillende manieren in een van de acht evoluties.</p>	
+			</article>
+			
 		</section>
 
-		<section class="stat offset1">
-			<img src="images/icestone.png" alt="icestone">
+		<section class= "visible circle">
+			
+			<button class="stones" id ="icestone">
+				<img src="images/icestone.png" alt="icestone">
+			</button>
+
+			<button class="stones" id ="leafstone">
+				<img src="images/leafstone.png" alt="leafstone">
+			</button>
+
+			<button class="stones" id ="firestone">
+				<img src="images/firestone.png" alt="firestone">			
+			</button>
+
+			<button class="stones" id ="thunderstone">
+				<img src="images/thunderstone.png" alt="thunderstone">
+			</button>
+
+			<button class="stones" id ="waterstone">
+				<img src="images/waterstone.png" alt="waterstone">
+			</button>
+
+			<button class="stones" id ="friendship">
+				<img src="images/friendship.png" alt="friendship">
+			</button>
+
+			
 		</section>
 
-		<section class="stat offset2">
-			<img src="images/leafstone.png" alt="leafstone">
-		</section>
+		<button class="stones" id ="eevee">
+			<img src="images/eevee.png" alt="leafstone">
+		</button>
+			
 
-		<section class="stat offset3">
-			<img src="images/firestone.png" alt="firestone">			
-		</section>
-
-		<section class="stat offset4">
-			<img src="images/thunderstone.png" alt="thunderstone">
-		</section>
-
-		<section class="stat offset5">
-			<img src="images/waterstone.png" alt="waterstone">
-		</section>
-
-		<section class="stat offset6">
-			<img src="images/friendship.png" alt="friendship">
-		</section>
 	</section>
-	
-		
-	
-		<!-- <ul class="stone-circle">
-
-			<li class="center">
-				<section class= "eevee">
-					<img src="images/eevee.png" alt="Eevee">
-				</section>
-			</li>
-			
-			
-			<li class="deg0">
-				<section class="firestone">
-					<img class= "stones" src="images/firestone.png" alt="firestone">
-				</section>
-			</li>
-						
-			<li class="deg60">
-				<section class="waterstone">
-					<img class= "stones" src="images/waterstone.png" alt="waterstone">
-				</section>
-			</li>
-			
-			<li class="deg120">
-				<section class="thunderstone">
-					<img class= "stones" src="images/thunderstone.png" alt="thunderstone">
-				</section>
-			</li>
-
-			<li class="deg180">
-				<section class="leafstone">
-					<img class= "stones" src="images/leafstone.png" alt="leafstone">
-				</section>
-			</li>
-
-			<li class="deg240">
-				<section class="icestone">
-					<img class= "stones" src="images/icestone.png" alt="icestone">
-				</section>
-			</li>
-
-			<li class="deg300">
-				<section class="friendship">
-					<img class= "stones" src="images/friendship.png" alt="friendship">
-				</section>
-			</li>
-
-		</ul> -->
-
-			
-		
-
+</main>	
+<footer>
+	<!-- <p>Interface & Interactie | Yousri Bouzaien</p> -->
+</footer>
 	<script src="scripts/script.js"></script>
 </body>
 	
