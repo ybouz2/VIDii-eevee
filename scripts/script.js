@@ -227,6 +227,8 @@ for (var i = 0; i < buttonStone.length; i++) {
   };
 
 
+
+// Ik begrijp niet alles wat hier gebeurd maar wel een beetje, met hulp van Jeffrey geschreven.
 stones.forEach(function (i){
 
     i.addEventListener('mouseover' , () =>{

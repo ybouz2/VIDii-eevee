@@ -30,6 +30,9 @@
  
 }
 
+
+
+/* STYLING */
 html {
   background-image: var(--html-bg-image);
   background-size: cover;
@@ -80,6 +83,7 @@ p{
      width: 50vw;
    }
 
+  /* TEKST NIET ZICHTBAAR PAS ALS DE CLASS Visible EROP WORD GEZET */
 article{
   align-items: left;
   color: #fff;
@@ -122,6 +126,7 @@ button:active {
   opacity: 0.5;
 }
 
+/* STYLING VAN DE CIRKEL IN HET MIDDEN */
 main section section:nth-of-type(1) {
   background: var(--color-eevee);
   border-radius: 100%;
@@ -145,6 +150,7 @@ main section section:nth-of-type(1) {
   width: 35vmin;
 }
 
+/* POSITIE VAN DE MIDDEN CIRKEL */
 main section, main section section:nth-of-type(2) {
   display: grid;
   grid-template-areas: "layer";
@@ -155,10 +161,12 @@ main section, main section section:nth-of-type(2) {
   transform: translate(-50%, -50%);
 }
 
+/* STYLING AFBEELDING STENEN */
 header section button img, main section section:nth-of-type(2) button img, main section button img {
   width: 5vmin;
 }
 
+/* STYLING VAN DE STENEN */
 header section button, main section section:nth-of-type(2) button, main section button {
   background: none;
   border-radius: 50%;
@@ -171,6 +179,7 @@ header section button, main section section:nth-of-type(2) button, main section 
   width: 10vmin;
 }  
 
+/* ACHTERGROND KLEUR EN POSITIE VAN ELKE STEEN */
 main section section:nth-of-type(2) button:nth-of-type(1) {
   background: var(--color-glaceon);
   transform: translateX(40vmin);
@@ -215,7 +224,6 @@ header section button:nth-of-type(2) {
 }
 
 /* CLASSES DIE WORDEN TOEGEVOEGD/GESWITCHED MET JAVASCRIPT*/
-
 .visible{
   opacity: 1;
   top: 72vmin;
@@ -341,6 +349,8 @@ to {
 }
       }
 
+
+/* RESPONSIVENESS */
 @media only screen and (max-width: 820px) {
   p:first-of-type {
   width: 15vmin;
