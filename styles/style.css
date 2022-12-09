@@ -108,10 +108,14 @@ article p:first-of-type{
   width: 10vmin;
 }
 
-main section section:nth-of-type(1) img:hover {
+main section:nth-of-type(1) img:hover {
   animation: bounce 2s ease infinite;
   animation: bounce 2s ease infinite;
   cursor: pointer;
+}
+
+main section:nth-of-type(1).eevee-clicked img:hover  {
+  animation: none;
 }
 
 button {
@@ -127,7 +131,12 @@ button:active {
 }
 
 /* STYLING VAN DE CIRKEL IN HET MIDDEN */
-main section section:nth-of-type(1) {
+
+main section:first-of-type{
+  z-index: 2;
+}
+
+main section {
   background: var(--color-eevee);
   border-radius: 100%;
   cursor: pointer;
@@ -137,10 +146,10 @@ main section section:nth-of-type(1) {
   top: 50%;
   transform: translate(-50%, -50%);
   transition: all ease-in-out 1s;
-  z-index: 2;
+ 
 }
 
- main section section:nth-of-type(1) img {
+ main section:nth-of-type(1) img {
   animation: scale 2s timing-function delay iteration-count direction fill-mode;
   transition: all ease-in-out 1s ;
   width: 35vmin;
@@ -151,7 +160,8 @@ main section section:nth-of-type(1) {
 }
 
 /* POSITIE VAN DE MIDDEN CIRKEL */
-main section, main section section:nth-of-type(2) {
+main, main section:nth-of-type(2) {
+  background: none;
   display: grid;
   grid-template-areas: "layer";
   left: 50%;
@@ -162,12 +172,12 @@ main section, main section section:nth-of-type(2) {
 }
 
 /* STYLING AFBEELDING STENEN */
-header section button img, main section section:nth-of-type(2) button img, main section button img {
+header section button img, main section:nth-of-type(2) button img, main button img {
   width: 5vmin;
 }
 
 /* STYLING VAN DE STENEN */
-header section button, main section section:nth-of-type(2) button, main section button {
+header section button, main section:nth-of-type(2) button, main button {
   background: none;
   border-radius: 50%;
   display: grid;
@@ -180,46 +190,47 @@ header section button, main section section:nth-of-type(2) button, main section 
 }  
 
 /* ACHTERGROND KLEUR EN POSITIE VAN ELKE STEEN */
-main section section:nth-of-type(2) button:nth-of-type(1) {
+main section:nth-of-type(2) button:nth-of-type(1) {
   background: var(--color-glaceon);
   transform: translateX(40vmin);
 }
 
-main section section:nth-of-type(2) button:nth-of-type(2) {
+main section:nth-of-type(2) button:nth-of-type(2) {
   background: var(--color-leafeon);
-  transform: translate(30vmin, 30vmin);
+  transform: rotate(45deg) translateX(40vmin) rotate(-45deg);
+  
 }
 
-main section section:nth-of-type(2) button:nth-of-type(3) {
-  background: var(--color-flareon);
-  transform: translateY(40vmin);
+main section:nth-of-type(2) button:nth-of-type(3) {
+  background: var(--color-flareon);  
+  transform: rotate(90deg) translateX(40vmin) rotate(-90deg);
 }
 
-main section section:nth-of-type(2) button:nth-of-type(4) {
-  background:var(--color-jolteon);
-  transform: translate(-30vmin, 30vmin);
+main section:nth-of-type(2) button:nth-of-type(4) {
+  background:var(--color-jolteon);  
+  transform: rotate(135deg) translateX(40vmin) rotate(-135deg);
 }
 
-main section section:nth-of-type(2) button:nth-of-type(5) {
-  background: var(--color-vaporeon);
-  transform: translateX(-40vmin);
+main  section:nth-of-type(2) button:nth-of-type(5) {
+  background: var(--color-vaporeon); 
+  transform: rotate(180deg) translateX(40vmin) rotate(-180deg);
 }
 
-main section button {
-  background: var(--color-eevee);
-  transform: translateY(-40vmin);
+main button {
+  background: var(--color-eevee);  
+  transform: rotate(270deg) translateX(40vmin) rotate(-270deg);
 }
 
-main section section:nth-of-type(2) button:nth-of-type(6){
+main section:nth-of-type(2) button:nth-of-type(6){
   background: var(--color-sylveon);
-  transform: translate(30vmin, -30vmin);
+  transform: rotate(315deg) translateX(40vmin) rotate(-315deg);
 }
 
-header section button:nth-of-type(1){
+header button:nth-of-type(1){
   background: var(--color-espeon);
 }
 
-header section button:nth-of-type(2) {
+header button:nth-of-type(2) {
   background: var(--color-umbreon);
 }
 
@@ -243,7 +254,7 @@ header section button:nth-of-type(2) {
 .eevee-clicked {
     display: flex;
     justify-content: space-between;
-    padding: 100vmin !important;
+    padding: 100vmin;
   }
 
  .eevee-clicked img{
@@ -252,51 +263,50 @@ header section button:nth-of-type(2) {
   top: 50%;
   transform: translateY(-50%);
   transition: all ease-in-out 1s ;
-  width: 50vmin !important;
+  width: 50vmin;
+  
 }
 
- .eevee-clicked img:hover{
-  animation: none !important;
-}
+
 
  .stat-hidden{
   visibility: hidden;
 }
 
-.background-glaceon{
-  background: var(--color-glaceon) !important;
+.background-glaceon {
+  background: var(--color-glaceon);
 }
 
 .background-leafeon{
-  background: var(--color-leafeon) !important;
+  background: var(--color-leafeon) ;
 }
 
 .background-flareon{
-  background: var(--color-flareon) !important;
+  background: var(--color-flareon);
 }
   
 .background-jolteon{
-  background: var(--color-jolteon) !important;
+  background: var(--color-jolteon);
 }  
 
 .background-vaporeon{
-  background: var(--color-vaporeon) !important;
+  background: var(--color-vaporeon);
 } 
 
 .background-sylveon{
-  background: var(--color-sylveon) !important;
+  background: var(--color-sylveon);
 } 
 
 .background-espeon{
-  background: var(--color-sun) !important;
+  background: var(--color-sun);
 } 
 
 .background-umbreon{
-  background: var(--color-moon) !important;
+  background: var(--color-moon);
 } 
 
 .background-eevee{
-  background: var(--color-eevee)!important;
+  background: var(--color-eevee);
 } 
 
 .html-espeon{
@@ -318,8 +328,8 @@ header section button:nth-of-type(2) {
   color: #000;
 }
 
-.type-border-color{
-  border: 2px solid #000 !important;
+ article p:first-of-type.type-border-color {
+  border: 2px solid #000;
 }
 
   /* KEYFRAMES */
@@ -380,7 +390,7 @@ to {
   }
 
   .visible {
-         justify-content: flex-start !important;
+         
        }
 
   
