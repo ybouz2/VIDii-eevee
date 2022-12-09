@@ -24,6 +24,12 @@
   --color-umbreon: #000;
   --color-vaporeon:#3193DD;
   --html-bg-image: url(../images/background.png);
+  --html-bg-image-glaceon: url(../images/snow.gif);
+  --html-bg-image-flareon: url(../images/firegif.gif);
+  --html-bg-image-leafeon: url(../images/leafs.gif);
+  --html-bg-image-jolteon: url(../images/electricity.gif);
+  --html-bg-image-vaporeon: url(../images/water.gif);
+  --html-bg-image-sylveon: url(../images/hearts.gif);
   --p--font-family: 'Roboto', Verdana, Arial, sans-serif;
   --h2-font-family: 'Flexo-Medium', Helvetica, Arial, sans-serif;
   
@@ -37,6 +43,48 @@ html {
   background-image: var(--html-bg-image);
   background-size: cover;
   display: flex;
+}
+
+html.glaceon{
+  /* BRON: https://gifer.com/en/SBMh */
+  background-image: var(--html-bg-image-glaceon);
+  
+}
+
+html.flareon{
+  /* BRON: https://gifer.com/en/4i9n */
+  background-image: var(--html-bg-image-flareon);
+  background-size: contain;
+}
+
+html.leafeon{
+  /* BRON: https://gifer.com/en/ZMR1 */
+  background-image: var(--html-bg-image-leafeon);
+  
+}
+
+html.eevee-bg{
+  /* BRON: https://gifer.com/en/SBMh */
+  background-image: var(--html-bg-image);
+
+}
+
+html.jolteon{
+  /* BRON: https://gifer.com/en/7A9d */
+  background-image: var(--html-bg-image-jolteon);
+}
+
+html.sylveon{
+  /* BRON: https://gifer.com/en/ZeQY */
+  background-image: var(--html-bg-image-sylveon);
+}
+
+html.vaporeon{
+  /* BRON: https://gifer.com/en/2i0K */
+  background-image: var(--html-bg-image-vaporeon);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat ;
 }
 
 body {

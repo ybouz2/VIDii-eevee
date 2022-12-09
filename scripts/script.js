@@ -42,6 +42,8 @@ function wijzig(target) {
       //EERST VERWIJDER JE ALLE ACHTERGROND CLASSES DAARNA VOEG JE DE CLASS VAN DE JUISTE POKEMON TOE.
       document.querySelector("main section:nth-of-type(1)").classList.remove('background-leafeon','background-glaceon', 'background-flareon', 'background-jolteon', 'background-vaporeon', 'background-sylveon', 'background-umbreon', 'background-espeon', 'background-eevee');
       document.querySelector("main section:nth-of-type(1)").classList.add('background-glaceon');
+      document.querySelector("html").classList.remove('leafeon','glaceon', 'flareon', 'jolteon', 'vaporeon', 'sylveon', 'umbreon', 'espeon', 'eevee-bg');
+      document.querySelector("html").classList.add('glaceon');
 
     // CODE WAARMEE JE CSS TOEVOEGD IN HTML *NIET AAN TE RADEN*
     //   document.querySelector(".eevee").style.background = '#DEF0F3';
@@ -60,6 +62,8 @@ function wijzig(target) {
         //EERST VERWIJDER JE ALLE ACHTERGROND CLASSES DAARNA VOEG JE DE CLASS VAN DE JUISTE POKEMON TOE.
         document.querySelector("main section:nth-of-type(1)").classList.remove('background-leafeon','background-glaceon', 'background-flareon', 'background-jolteon', 'background-vaporeon', 'background-sylveon', 'background-umbreon', 'background-espeon', 'background-eevee');
         document.querySelector("main section:nth-of-type(1)").classList.add('background-leafeon');
+        document.querySelector("html").classList.remove('leafeon','glaceon', 'flareon', 'jolteon', 'vaporeon', 'sylveon', 'umbreon', 'espeon', 'eevee-bg');
+        document.querySelector("html").classList.add('leafeon');
         
         // CODE WAARMEE JE CSS TOEVOEGD IN HTML *NIET AAN TE RADEN*
         // document.querySelector(".eevee").style.background = '#C0CF9C';
@@ -77,6 +81,8 @@ function wijzig(target) {
         //EERST VERWIJDER JE ALLE ACHTERGROND CLASSES DAARNA VOEG JE DE CLASS VAN DE JUISTE POKEMON TOE.
         document.querySelector("main section:nth-of-type(1)").classList.remove('background-leafeon','background-glaceon', 'background-flareon', 'background-jolteon', 'background-vaporeon', 'background-sylveon', 'background-umbreon', 'background-espeon', 'background-eevee');
         document.querySelector("main section:nth-of-type(1)").classList.add('background-flareon');
+        document.querySelector("html").classList.remove('leafeon','glaceon', 'flareon', 'jolteon', 'vaporeon', 'sylveon', 'umbreon', 'espeon', 'eevee-bg');
+        document.querySelector("html").classList.add('flareon');
 
         // CODE WAARMEE JE CSS TOEVOEGD IN HTML *NIET AAN TE RADEN*
         // document.querySelector(".eevee").style.background = '#E98E33';
@@ -94,6 +100,8 @@ function wijzig(target) {
         //EERST VERWIJDER JE ALLE ACHTERGROND CLASSES DAARNA VOEG JE DE CLASS VAN DE JUISTE POKEMON TOE.
         document.querySelector("main section:nth-of-type(1)").classList.remove('background-leafeon','background-glaceon', 'background-flareon', 'background-jolteon', 'background-vaporeon', 'background-sylveon', 'background-umbreon', 'background-espeon', 'background-eevee');
         document.querySelector("main section:nth-of-type(1)").classList.add('background-jolteon');
+        document.querySelector("html").classList.remove('leafeon','glaceon', 'flareon', 'jolteon', 'vaporeon', 'sylveon', 'umbreon', 'espeon', 'eevee-bg');
+        document.querySelector("html").classList.add('jolteon');
 
         // CODE WAARMEE JE CSS TOEVOEGD IN HTML *NIET AAN TE RADEN*
         // document.querySelector("main section section:nth-of-type(1)").style.background = '#CDDF81';
@@ -111,6 +119,8 @@ function wijzig(target) {
         //EERST VERWIJDER JE ALLE ACHTERGROND CLASSES DAARNA VOEG JE DE CLASS VAN DE JUISTE POKEMON TOE.
         document.querySelector("main section:nth-of-type(1)").classList.remove('background-leafeon','background-glaceon', 'background-flareon', 'background-jolteon', 'background-vaporeon', 'background-sylveon', 'background-umbreon', 'background-espeon', 'background-eevee');
         document.querySelector("main section:nth-of-type(1)").classList.add('background-vaporeon');
+        document.querySelector("html").classList.remove('leafeon','glaceon', 'flareon', 'jolteon', 'vaporeon', 'sylveon', 'umbreon', 'espeon', 'eevee-bg');
+        document.querySelector("html").classList.add('vaporeon');
 
 
         // CODE WAARMEE JE CSS TOEVOEGD IN HTML *NIET AAN TE RADEN*
@@ -129,6 +139,8 @@ function wijzig(target) {
         //EERST VERWIJDER JE ALLE ACHTERGROND CLASSES DAARNA VOEG JE DE CLASS VAN DE JUISTE POKEMON TOE.
         document.querySelector("main section:nth-of-type(1)").classList.remove('background-leafeon','background-glaceon', 'background-flareon', 'background-jolteon', 'background-vaporeon', 'background-sylveon', 'background-umbreon', 'background-espeon', 'background-eevee');
         document.querySelector("main section:nth-of-type(1)").classList.add('background-sylveon');
+        document.querySelector("html").classList.remove('leafeon','glaceon', 'flareon', 'jolteon', 'vaporeon', 'sylveon', 'umbreon', 'espeon', 'eevee-bg');
+        document.querySelector("html").classList.add('sylveon');
 
 
         // CODE WAARMEE JE CSS TOEVOEGD IN HTML *NIET AAN TE RADEN* ( HEB HET OPGELOST DOOR CLASSES TOE TE LATEN VOEGEN)
@@ -155,6 +167,8 @@ function wijzig(target) {
         //EERST VERWIJDER JE ALLE ACHTERGROND CLASSES DAARNA VOEG JE DE CLASS VAN DE JUISTE POKEMON TOE.
         document.querySelector("main section:nth-of-type(1)").classList.remove('background-leafeon','background-glaceon', 'background-flareon', 'background-jolteon', 'background-vaporeon', 'background-sylveon', 'background-umbreon', 'background-espeon', 'background-eevee');
         document.querySelector("main section:nth-of-type(1)").classList.add('background-espeon');
+        document.querySelector("html").classList.remove('leafeon','glaceon', 'flareon', 'jolteon', 'vaporeon', 'sylveon', 'umbreon', 'espeon', 'eevee-bg');
+      
 
         // CODE WAARMEE JE CSS TOEVOEGD IN HTML *NIET AAN TE RADEN*
         // document.querySelector("html").style.background = '#87CEEB';
@@ -180,6 +194,8 @@ function wijzig(target) {
         //EERST VERWIJDER JE ALLE ACHTERGROND CLASSES DAARNA VOEG JE DE CLASS VAN DE JUISTE POKEMON TOE.
         document.querySelector("main section:nth-of-type(1)").classList.remove('background-leafeon','background-glaceon', 'background-flareon', 'background-jolteon', 'background-vaporeon', 'background-sylveon', 'background-umbreon', 'background-espeon', 'background-eevee');
         document.querySelector("main section:nth-of-type(1)").classList.add('background-umbreon');
+        document.querySelector("html").classList.remove('leafeon','glaceon', 'flareon', 'jolteon', 'vaporeon', 'sylveon', 'umbreon', 'espeon', 'eevee-bg');
+      
 
         // CODE WAARMEE JE CSS TOEVOEGD IN HTML *NIET AAN TE RADEN*
         // document.querySelector("main section section:nth-of-type(1)").style.background = '#FEFCD7';
@@ -206,6 +222,8 @@ function wijzig(target) {
         //EERST VERWIJDER JE ALLE ACHTERGROND CLASSES DAARNA VOEG JE DE CLASS VAN DE JUISTE POKEMON TOE.
         document.querySelector("main section:nth-of-type(1)").classList.remove('background-leafeon','background-glaceon', 'background-flareon', 'background-jolteon', 'background-vaporeon', 'background-sylveon', 'background-umbreon', 'background-espeon', 'background-eevee');
         document.querySelector("main section:nth-of-type(1)").classList.add('background-eevee');
+        document.querySelector("html").classList.remove('leafeon','glaceon', 'flareon', 'jolteon', 'vaporeon', 'sylveon', 'umbreon', 'espeon', 'eevee-bg');
+        document.querySelector("html").classList.add('eevee-bg');
 
         // CODE WAARMEE JE CSS TOEVOEGD IN HTML *NIET AAN TE RADEN*
         // document.querySelector("main section section:nth-of-type(1)").style.background = '#CFBB98';
