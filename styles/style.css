@@ -295,8 +295,9 @@ header button:nth-of-type(2) {
 
 .eevee{
   
-  animation: flicker .2s ease-in-out;
-  animation-iteration-count: 10;
+  animation: flicker .2s infinite ease-in-out;
+
+  
 }
 
 .eevee-clicked {
@@ -400,10 +401,10 @@ header button:nth-of-type(2) {
 @keyframes flicker {    
 
   from {
-  opacity: 0;
+    filter: none;
 }
 to {
-  opacity: 1;
+  filter: brightness(0) invert(1);
 }
       }
 
@@ -432,14 +433,15 @@ to {
     height: 100vh;
     left: 120vmin;
     overflow: scroll;
-    top: 190vmin !important;
     transform: translate(-50%, -50%);
     width: 100vw;
   }
 
-  .visible {
-         
-       }
+  article.visible{
+    top:190vmin;
+  }
+
+  
 
   
 }
